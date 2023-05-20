@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Car table</title>
 </head>
 
 <style>
@@ -56,6 +56,7 @@
 <table class="table table-dark">
   <thead>
   <tr>
+    <th scope="col">Model</th>
     <th scope="col">Color</th>
     <th scope="col">Age</th>
     <th scope="col">MaxSpeed</th>
@@ -63,11 +64,10 @@
   </thead>
   <tbody>
   <tr th:each="car: ${car}">
+    <td th:text="${car.model}"/>
     <td th:text="${car.color}"/>
     <td th:text="${car.age}"/>
     <td th:text="${car.maxSpeed}"/>
-
-
   </tr>
   </tbody>
 </table>

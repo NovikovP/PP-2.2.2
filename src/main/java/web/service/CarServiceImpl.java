@@ -13,11 +13,11 @@ public class CarServiceImpl implements CarService {
     private final List<Car> cars = new ArrayList<>();
 
     {
-        cars.add(new Car("Green", 2, 280));
-        cars.add(new Car("Black", 5, 300));
-        cars.add(new Car("Yellow", 11, 190));
-        cars.add(new Car("Blue", 8, 220));
-        cars.add(new Car("White", 15, 160));
+        cars.add(new Car("BMW","Green", 2, 280));
+        cars.add(new Car("OPEL","Black", 5, 300));
+        cars.add(new Car("TESLA","Yellow", 11, 190));
+        cars.add(new Car("KIA","Blue", 8, 220));
+        cars.add(new Car("UAZ","White", 15, 160));
     }
 
     @Override
